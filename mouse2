@@ -1,0 +1,26 @@
+bg=0
+def setup():
+    size(650,650)
+    frameRate(20)
+    #rect(250,250,150,100)
+def mouseClicked():
+    global bg
+    #background(bg)
+    #if mouseButton==LEFT:
+    #     line(mouseX,mouseY,pmouseX,pmouseY)
+    # if mouseButton==RIGHT:
+    #     background(255)
+    if mouseX>400 and mouseX<550 and mouseY>400 and mouseY<500:
+        bg=0
+    if mouseX>250 and mouseX<400 and mouseY>250 and mouseY<350:
+        bg=255
+    background(bg)
+def draw():
+    global bg
+    background(bg)
+    rect(250,250,150,100)
+    rect(400,400,150,100)
+    # if mouseX>250 and mouseX<400 and mouseY>250 and mouseY<350:
+    #     bg=255
+    # if mouseX>400 and mouseX<550 and mouseY>250 and mouseY<500:
+    #     background(0)
